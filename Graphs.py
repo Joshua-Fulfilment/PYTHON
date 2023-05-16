@@ -1,6 +1,9 @@
 class graph:
     def __init__(self):
         self.adjacency_list = {}
+
+# A vertex is a Node; Edge is the connector(line)
+
     def add_vertex(self, vertex):
         if vertex not in self.adjacency_list:
             self.adjacency_list[vertex] = []
@@ -29,4 +32,3 @@ class graph:
 
         del self.adjacency_list[vertex]
         return self
-    
